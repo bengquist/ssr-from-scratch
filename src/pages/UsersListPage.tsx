@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { AppState } from "../store";
 import { fetchUsers } from "../store/user/actions";
+import { Store } from "redux";
 
 type Props = {
   fetchUsers: () => void;
@@ -31,7 +32,14 @@ const mapStateToProps = (state: AppState) => {
   return { users: state.users };
 };
 
-export default connect(
-  mapStateToProps,
-  { fetchUsers }
-)(UsersList);
+const loadData = (store: any) => {
+  return store.dispatch(fetchUsers());
+};
+
+export default {
+  loadData,
+  component: connect(
+    mapStateToProps,
+    { fetchUsers }
+  )(UsersList)
+};
