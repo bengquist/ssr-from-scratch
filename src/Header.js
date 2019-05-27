@@ -5,8 +5,9 @@ import styled from "styled-components";
 function Header() {
   return (
     <Container>
-      <Link to="/">Home</Link>
-      <Link to="/people">People</Link>
+      {/* <Link to="/">Home</Link>
+      <Link to="/people">People</Link> */}
+      Header
     </Container>
   );
 }

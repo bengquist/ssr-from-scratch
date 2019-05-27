@@ -2,10 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styled from "styled-components";
 
-type Person = {
-  name: string;
-};
-
 function People() {
   const [people, setPeople] = useState([]);
 
@@ -22,7 +18,7 @@ function People() {
   return (
     <Container>
       <h1>People</h1>
-      {people.map((person: Person) => (
+      {people.map(person => (
         <p key={person.name}>{person.name}</p>
       ))}
     </Container>

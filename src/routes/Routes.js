@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route } from "react-router";
-import Home from "../components/Home";
-import People from "../components/People";
+import Home from "../Home";
+import People from "../People";
 
 function Routes() {
   return (
