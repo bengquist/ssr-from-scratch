@@ -19,11 +19,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js?$/,
+        test: /\.(js|ts)x?$/,
         loader: "babel-loader",
         exclude: /node_modules/
       },
-      { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
       { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
     ]
   }
