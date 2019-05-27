@@ -36,6 +36,8 @@ const loadData = (store: any) => {
   return store.dispatch(fetchUsers());
 };
 
+export { loadData };
+
 export default {
   loadData,
   component: connect(
