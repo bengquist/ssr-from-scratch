@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-function Home() {
+function HomePage() {
   return (
     <div>
       <h1>I am Home!!!</h1>
@@ -10,5 +10,5 @@ function Home() {
 }
 
 export default {
-  components: Home
+  component: HomePage
 };

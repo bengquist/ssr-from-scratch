@@ -4,9 +4,7 @@ export interface UserState {
 
 export const FETCH_USERS = "FETCH_USERS";
 
-interface UpdateSessionAction {
+export interface FetchUsersAction {
   type: typeof FETCH_USERS;
   payload: UserState;
 }
-
-export type UserActionTypes = UpdateSessionAction;
