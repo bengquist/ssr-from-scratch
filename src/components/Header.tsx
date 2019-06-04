@@ -8,8 +8,6 @@ type Props = {
 };
 
 function Header({ auth }: Props) {
-  console.log(auth);
-
   const authLink = auth ? (
     <a href="/api/logout">Logout</a>
   ) : (

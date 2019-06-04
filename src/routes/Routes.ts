@@ -2,6 +2,7 @@ import App from "../App";
 import HomePage from "../pages/HomePage";
 import UsersListPage from "../pages/UsersListPage";
 import { ReactNode } from "react";
+import NotFoundPage from "../pages/NotFoundPage";
 
 export type ConfigRoute = {
   path: string;
@@ -22,6 +23,9 @@ export default [
       {
         ...UsersListPage,
         path: "/users"
+      },
+      {
+        ...NotFoundPage
       }
     ]
   }
